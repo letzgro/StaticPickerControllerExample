@@ -2,7 +2,7 @@
 //  ChooseKindOfExperienceViewController.swift
 //  OnGo
 //
-//  Created by LEZGRO on 11/16/15.
+//  Created by Ihor Rapalyuk on 11/16/15.
 //  Copyright © 2015 Lezgro. All rights reserved.
 //
 
