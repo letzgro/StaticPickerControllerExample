@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StaticPickerControllerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHW-8U-cBa">
+                                <rect key="frame" x="20" y="318" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40784313729999999" green="0.79607843140000001" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OHW-8U-cBa" secondAttribute="trailing" constant="20" id="ErV-kW-ZsY"/>
+                            <constraint firstItem="OHW-8U-cBa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Mhc-gh-8Mx"/>
+                            <constraint firstItem="OHW-8U-cBa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NEB-nf-Xl5"/>
+                            <constraint firstItem="OHW-8U-cBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y89-C1-ycM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="staticPickerController" destination="YiL-jh-CFu" id="eb1-nh-jjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="YiL-jh-CFu" customClass="StaticPickerController" customModule="StaticPickerControllerExample" customModuleProvider="target">
+                    <connections>
+                        <outlet property="choosingTextField" destination="OHW-8U-cBa" id="k2s-Uq-bGa"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="40.5" y="211.5"/>
+        </scene>
+    </scenes>
+</document>
